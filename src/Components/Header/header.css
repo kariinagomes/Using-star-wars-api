@@ -1,0 +1,22 @@
+.fixed-menu {
+  /* background-color: rgba(22, 22, 22, 0.7); */
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../../assets/imgs/star-wars-background.jpg");
+  background-size: 10%;
+}
+
+.fixed-menu div {
+  padding:10px;
+}
+
+.fixed-menu img {
+  width: 130px;
+  height: auto;
+  object-fit: cover;
+}
