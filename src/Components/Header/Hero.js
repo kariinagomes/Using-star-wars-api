@@ -1,12 +1,14 @@
 import React from 'react';
 import './hero.css';
 
-const Header = () => {
+const Hero = () => {
   return (
     <div className="header">
-      <span>testando</span>
+      <div>
+        <h1 className="title">Star Wars API</h1>
+      </div>
     </div>
   )
 }
 
-export default Header;
+export default Hero;
