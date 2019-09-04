@@ -24,15 +24,18 @@ const Main = () => {
         <Header />
         <Hero />
       </header>
-      <body>
+      <div>
         <Body> 
-            <div className="character-container">
-                {
-                  characters.map(character => <CharacterItem character={character} key={character.id} />)
-                }
-            </div>         
+          <div className="description-page">
+            <h6>Characters</h6>
+          </div>
+          <div className="character-container">
+              {
+                characters.map(character => <CharacterItem character={character} key={character.url} />)
+              }
+          </div>         
         </Body>      
-      </body>
+      </div>
     </>   
   )
 }

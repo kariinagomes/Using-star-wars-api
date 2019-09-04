@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 import './characterItem.css';
 
 const CharacterItem = ({ character }) => {
+  const characterId = character.url.substr(-2, 1); // para considerar somente o id
+  
   return (
     <div className="character-item">  
       <div className="character-header">
         <h6>{character.name}</h6>
         <div className="more-details">
-          <Link to={`/people/${character.id}`}>
+          <Link to={`/people/${characterId}`}>
             <span>+</span>
           </Link>
         </div>
